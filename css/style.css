@@ -212,7 +212,7 @@ select:focus, input:focus {
 	color: #0c1e28;
 }
 .about {
-	background: url(../images/aboutbg.jpg) no-repeat center top;
+	background: url(../images/aboutbg.jpg) repeat-y center top;
 	overflow: hidden;
 }
 .about2 {
