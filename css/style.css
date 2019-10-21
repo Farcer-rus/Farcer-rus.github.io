@@ -23,6 +23,15 @@ select:focus, input:focus {
 	left: 50%;
 	margin-left: -600px;
 }
+.iblock2 {
+	width: 1200px;
+	box-sizing: border-box;
+	padding: 0px 20px;
+	float: left;
+	position: relative;
+	left: 50%;
+	margin-left: -600px;
+}
 .header {
 	background: url(../images/bg.jpg) no-repeat center top;
 	color: #fff;
@@ -155,6 +164,9 @@ select:focus, input:focus {
 .logos {
 	background: #e9eaec;
 }
+.logos2 {
+	background: #e9eaec;
+}
 .standart_head {
 	font-family: 'PT Sans', sans-serif;
 	margin-top: 50px;
@@ -200,6 +212,11 @@ select:focus, input:focus {
 	color: #0c1e28;
 }
 .about {
+	height: 635px;
+	background: url(../images/aboutbg.jpg) no-repeat center top;
+	overflow: hidden;
+}
+.about2 {
 	height: 635px;
 	background: url(../images/aboutbg.jpg) no-repeat center top;
 	overflow: hidden;
