@@ -212,7 +212,6 @@ select:focus, input:focus {
 	color: #0c1e28;
 }
 .about {
-	height: 635px;
 	background: url(../images/aboutbg.jpg) no-repeat center top;
 	overflow: hidden;
 }
