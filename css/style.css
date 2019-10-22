@@ -56,7 +56,7 @@ select:focus, input:focus {
 	font-family: 'PT Sans', sans-serif;
 }
 .header_menu {
-	font-family: 'rodchenko', sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 13px;
@@ -84,7 +84,7 @@ select:focus, input:focus {
 	margin-top: 10px;
 }
 .contact {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'rodchenko', sans-serif;
 	text-align: right;
 	float: right;
 	font-size: 25px;
