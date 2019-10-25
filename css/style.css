@@ -172,7 +172,7 @@ select:focus, input:focus {
 	margin-right: 8px;
 }
 .logos {
-	background: #e9eaec;
+	background: url(../images/bgmanuf.png) no-repeat center center;
 }
 .logos2 {
 	background: #e9eaec;
