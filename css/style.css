@@ -73,7 +73,7 @@ select:focus, input:focus {
 	margin-top: 10px;
 }
 .contact {
-	font-family: 'rodchenko', sans-serif;
+	font-family: 'rodchenko';
 	text-align: right;
 	float: right;
 	font-size: 40px;
@@ -84,7 +84,7 @@ select:focus, input:focus {
 	font-family: 'rodchenko', sans-serif;
 	text-align: right;
 	float: right;
-	font-size: 30px;
+	font-size: 25px;
 	margin-top: 20px;
 	line-height: 20px;
 }
