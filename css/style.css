@@ -556,7 +556,6 @@ select:focus, input:focus {
 }
 .footer_double_right {
 	font-size: 18px;
-	font-weight: bold;
 	line-height: 20px;
 	text-align: right;
 	float: right;
