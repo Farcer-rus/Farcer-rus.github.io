@@ -202,7 +202,9 @@ select:focus, input:focus {
 }
 .logos_item_wrap {
 	background: url(../images/logos.png) no-repeat left top;
+    height: 150px;
     float: left;
+    width: 1440px;
 }
 .logos_item:hover {
 	-webkit-filter: grayscale(0%);
