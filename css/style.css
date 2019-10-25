@@ -81,8 +81,12 @@ select:focus, input:focus {
 	line-height: 20px;
 }
 .contact span {
+	font-family: 'rodchenko', sans-serif;
+	text-align: right;
+	float: right;
 	font-size: 30px;
-	display: none;
+	margin-top: 20px;
+	line-height: 20px;
 }
 .header_desc {
 	margin-top: 240px;
