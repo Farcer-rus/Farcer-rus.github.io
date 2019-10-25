@@ -23,11 +23,27 @@ select:focus, input:focus {
 	margin-left: -600px;
 }
 .iblock2 {
-	width: 1400px;
+	width: 1200px;
 	box-sizing: border-box;
 	padding: 0px 20px;
 	float: left;
 	position: relative;
+	left: 50%;
+	margin-left: -600px;
+}
+.logos_item2 {
+	margin: 25px 0px 30px 0px;
+	float: left;
+	width: 100%;
+    transition: all 0.3s ease-in-out;
+    height: 150px;
+    overflow: hidden;
+}
+.logos_item_wrap2 {
+	background: url(../images/logos.png) no-repeat left top;
+    height: auto;
+    float: left;
+    width: auto;
 }
 .header {
 	background: url(../images/bg.jpg) no-repeat center top;
