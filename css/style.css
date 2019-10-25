@@ -226,7 +226,6 @@ select:focus, input:focus {
 	float: left;
 	font-size: 17px;
 	color: #ffffff;
-	width: 500px;
 	font-family: 'rodchenko', sans-serif;
 }
 .about_pr_list_item {
