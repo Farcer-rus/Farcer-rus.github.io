@@ -227,7 +227,7 @@ select:focus, input:focus {
 	font-size: 17px;
 	color: #ffffff;
 	width: 500px;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'rodchenko', sans-serif;
 }
 .about_pr_list_item {
 	margin-top: 36px;
@@ -349,13 +349,13 @@ select:focus, input:focus {
 	background: url(../images/iconcatalog.png) no-repeat left center;
 }
 .download_head {
-	font-family: 'Bender-BlackItalic', sans-serif;
+	font-family: 'rodchenko', sans-serif;
 	margin-top: 55px;
 	font-size: 40px;
 	text-transform: uppercase;
 }
 .download_body {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'rodchenko', sans-serif;
 	font-size: 20px;
 	margin-top: 15px;
 }
@@ -524,7 +524,7 @@ select:focus, input:focus {
 }
 .footer {
 	height: 142px;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'rodchenko', sans-serif;
 	background: url(../images/footer_bg.jpg) no-repeat center top;
 	color: #fff;
 }
