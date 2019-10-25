@@ -17,7 +17,6 @@ select:focus, input:focus {
 .iblock {
 	width: 1200px;
 	box-sizing: border-box;
-	padding: 0px 20px;
 	float: left;
 	position: relative;
 	left: 50%;
