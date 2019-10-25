@@ -14,6 +14,14 @@ select:focus, input:focus {
 	width: 100%;
 	position: relative;
 }
+.iblock {
+	width: 1200px;
+	box-sizing: border-box;
+	float: left;
+	position: relative;
+	left: 50%;
+	margin-left: -600px;
+}
 .header {
 	background: url(../images/bg.jpg) no-repeat center top;
 	color: #fff;
