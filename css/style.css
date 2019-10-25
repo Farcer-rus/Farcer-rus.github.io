@@ -23,13 +23,11 @@ select:focus, input:focus {
 	margin-left: -600px;
 }
 .iblock2 {
-	width: 1200px;
+	width: 1400px;
 	box-sizing: border-box;
 	padding: 0px 20px;
 	float: left;
 	position: relative;
-	left: 50%;
-	margin-left: -600px;
 }
 .header {
 	background: url(../images/bg.jpg) no-repeat center top;
