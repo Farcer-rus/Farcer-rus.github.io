@@ -14,37 +14,6 @@ select:focus, input:focus {
 	width: 100%;
 	position: relative;
 }
-.iblock {
-	width: 1200px;
-	box-sizing: border-box;
-	float: left;
-	position: relative;
-	left: 50%;
-	margin-left: -600px;
-}
-.iblock2 {
-	width: 1200px;
-	box-sizing: border-box;
-	padding: 0px 20px;
-	float: left;
-	position: relative;
-	left: 50%;
-	margin-left: -600px;
-}
-.logos_item2 {
-	margin: 25px 0px 30px 0px;
-	float: left;
-	width: 100%;
-    transition: all 0.3s ease-in-out;
-    height: 150px;
-    overflow: hidden;
-}
-.logos_item_wrap2 {
-	background: url(../images/logos.png) no-repeat left top;
-    height: auto;
-    float: left;
-    width: auto;
-}
 .header {
 	background: url(../images/bg.jpg) no-repeat center top;
 	color: #fff;
@@ -268,7 +237,7 @@ select:focus, input:focus {
 }
 .manufactor {
 	background: url(../images/bgmanuf.jpg) no-repeat center top;
-	height: 257px;
+	height: 200px;
 }
 .manufactor_video {
 	margin: 50px 0px 00px 0px;
