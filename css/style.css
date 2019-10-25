@@ -197,7 +197,7 @@ select:focus, input:focus {
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
     transition: all 0.3s ease-in-out;
-    height: 104px;
+    height: 150px;
     overflow: hidden;
 }
 .logos_item_wrap {
