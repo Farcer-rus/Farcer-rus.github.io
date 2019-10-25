@@ -77,7 +77,7 @@ select:focus, input:focus {
 	font-family: 'rodchenko', sans-serif;
 	text-align: right;
 	float: right;
-	font-size: 35px;
+	font-size: 18px;
 	font-weight: bold;
 	margin-top: 20px;
 	line-height: 20px;
@@ -224,7 +224,7 @@ select:focus, input:focus {
 .about_pr_list {
 	margin: 20px 0px 70px 0px;
 	float: left;
-	font-size: 17px;
+	font-size: 18px;
 	color: #ffffff;
 	font-family: 'rodchenko', sans-serif;
 }
@@ -543,19 +543,19 @@ select:focus, input:focus {
 .footer_double_left {
 	float: left;
 	margin-left: 50px;
-	font-size: 15px;
+	font-size: 18px;
 	margin-top: 36px;
 }
 .footer_double_left a {
 	color: #fff;
 }
 .footer_double_left span {
-	font-size: 10px;
+	font-size: 14px;
     display: inline-block;
     margin-top: 4px;
 }
 .footer_double_right {
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
 	line-height: 20px;
 	text-align: right;
