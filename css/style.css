@@ -43,11 +43,10 @@ select:focus, input:focus {
 	background: linear-gradient(rgba(0,0,0,0.00) 60%, rgba(0,0,0,0.7) 100%);
 }
 .center_finish {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'rodchenko', sans-serif;
 }
 .header_menu {
-	font-family: 'PT Sans', sans-serif;
-	font-weight: bold;
+	font-family: 'rodchenko', sans-serif;
 	text-transform: uppercase;
 	font-size: 13px;
 	width: 100%;
@@ -78,7 +77,6 @@ select:focus, input:focus {
 	text-align: right;
 	float: right;
 	font-size: 18px;
-	font-weight: bold;
 	margin-top: 20px;
 	line-height: 20px;
 }
@@ -138,7 +136,6 @@ select:focus, input:focus {
 .header_but_dop_button {
 	float: right;
 	text-transform: uppercase;
-	font-weight: bold;
 	text-align: center;
 	margin-left: 25px;
 	width: 210px;
@@ -149,7 +146,6 @@ select:focus, input:focus {
 }
 .header_but_dop_button1 {
 	text-transform: uppercase;
-	font-weight: bold;
 	text-align: center;
 	margin-left: 25px;
 	width: 210px;
@@ -175,7 +171,6 @@ select:focus, input:focus {
 	float: left;
 	font-size: 25px;
 	text-transform: uppercase;
-	font-weight: bold;
 	color: #0c1e28;
 }
 .logos_item {
@@ -324,7 +319,6 @@ select:focus, input:focus {
 .catalog_item_button_wrap_button {
 	font-family: 'PT Sans', sans-serif;
 	text-transform: uppercase;
-	font-weight: bold;
 	text-align: center;
 	width: 210px;
 	height: 56px;
@@ -361,7 +355,6 @@ select:focus, input:focus {
 .header_but_dop_button {
 	font-family: 'PT Sans', sans-serif;
 	text-transform: uppercase;
-	font-weight: bold;
 	text-align: center;
 	width: 210px;
 	height: 56px;
@@ -408,7 +401,6 @@ select:focus, input:focus {
 .delivery_right_list_item span {
 	text-transform: uppercase;
 	font-size: 15px;
-	font-weight: bold;
     margin-bottom: 3px;
     display: inline-block;
 }
@@ -495,7 +487,6 @@ select:focus, input:focus {
 	color: #fff;
 }
 .portfolio_list_item_right_head {
-	font-weight: bold;
 	font-size: 20px;
 	margin-bottom: 17px;
 }
@@ -615,7 +606,6 @@ select:focus, input:focus {
 	padding: 20px;
 	font-family: 'PT Sans', sans-serif;
 	font-size: 16px;
-	font-weight: bold;
 	text-align: center;
 	background: url(../images/dop_bg.jpg) no-repeat center top;
 	z-index: 100;
@@ -684,7 +674,6 @@ select:focus, input:focus {
 	line-height: 66px;
 	text-align: center;
 	font-size: 24px;
-	font-weight: bold;
 	text-transform: uppercase;
 	color: #fff;
 	text-decoration: none;
@@ -719,7 +708,6 @@ select:focus, input:focus {
     text-transform: uppercase;
     font-size: 35px;
     font-family: 'PT Sans', sans-serif;
-    font-weight: bold;
     color: #00a0e9;
     margin-top: 150px;
     margin-bottom: 39px;
@@ -818,7 +806,6 @@ select:focus, input:focus {
 .button_of_form {
 	font-family: 'PT Sans', sans-serif;
 	text-transform: uppercase;
-	font-weight: bold;
 	text-align: center;
 	width: 210px;
 	height: 56px;
