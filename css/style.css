@@ -340,10 +340,9 @@ select:focus, input:focus {
 	color: #0c1e28;
 }
 .download_img {
-	width: 200px;
+	width: 233px;
 	height: 215px;
 	float: left;
-	background: url(../images/iconcatalog.png) no-repeat left center;
 }
 .download_head {
 	font-family: 'rodchenko', sans-serif;
