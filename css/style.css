@@ -227,13 +227,6 @@ select:focus, input:focus {
 	color: #fff;
 	font-family: 'PT Sans', sans-serif;
 }
-.about_pr_list2 {
-	margin: 20px 0px 70px 0px;
-	float: left;
-	font-size: 18px;
-	color: #fff;
-	font-family: 'ProximaNova-Regular', sans-serif;
-}
 .about_pr_list_item {
 	margin-top: 36px;
 	margin-left: 15px;
