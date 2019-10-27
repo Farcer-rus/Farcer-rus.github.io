@@ -335,7 +335,7 @@ select:focus, input:focus {
 	cursor: pointer;
 }
 .download {
-	background: url(../images/dop_bg.jpg) no-repeat center top;
+	background: url(../images/dop_bg1.jpg) no-repeat center top;
 	height: 213px;
 	color: #0c1e28;
 }
@@ -612,7 +612,7 @@ select:focus, input:focus {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 16px;
 	text-align: center;
-	background: url(../images/dop_bg.jpg) no-repeat center top;
+	background: url(../images/dop_bg1.jpg) no-repeat center top;
 	z-index: 100;
     width: 200px;
     cursor: pointer;
