@@ -348,12 +348,14 @@ select:focus, input:focus {
 	font-family: 'rodchenko', sans-serif;
 	margin-top: 55px;
 	font-size: 50px;
+	text-align: center;
 	text-transform: uppercase;
 }
 .download_body {
 	font-family: 'rodchenko', sans-serif;
 	font-size: 25px;
 	margin-top: 15px;
+	text-align: center;
 }
 .header_but_dop_button {
 	font-family: 'PT Sans', sans-serif;
