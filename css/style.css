@@ -8,6 +8,19 @@ a.knopka {
 } 
 a.knopka:hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
 a.knopka:active { background: rgb(152,15,0); } /* при нажатии */
+a {
+  color: #FF4500;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+  color: #b85e0c;
+  text-decoration: underline;
+}
+
+
 body {
 	margin: 0;
 	padding: 0;
