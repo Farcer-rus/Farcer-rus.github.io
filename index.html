@@ -32,7 +32,7 @@ function send_form() {
 var msg = $("#forma").serialize();
 $.ajax({
 type: "POST",
-url: "https://farcer-rus.github.io/send_form.php",
+url: "/send_form.php",
 data: msg,
 success: function(data) {
 alert("Сообщение отправлено");
