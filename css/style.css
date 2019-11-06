@@ -113,8 +113,7 @@ select:focus, input:focus {
 }
 .header_desc {
 	margin-top: 240px;
-	font-size: 35px;
-	line-height: 45px;
+	font-size: 32px;
 	font-family: 'rodchenko', sans-serif;
 	text-align: right;
 	width: 100%;
