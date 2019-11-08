@@ -62,6 +62,7 @@ function validate() {
 
 <body>
 
+<div style="float: left; width: 285px;"> <!-- ====1=== -->
 <!-- Простая форма HTML -->
 <!--
   Можно добавлять/удалять любые поля input, textarea, radio, checkbox, select.
@@ -118,6 +119,74 @@ function validate() {
 </form>
 </div>
 
+</div> <!-- ====/1=== -->
+
+
+<div style="float: left; width: 285px;"> <!-- ====2=== -->
+<!--
+  Можно добавлять/удалять любые поля input, textarea, radio, checkbox, select.
+  При добавлении полей обязательно!!! указывайте name="имя_поля[проверять да[1] или нет[0]]"
+-->
+<div class="form_body">
+<form action="/send_form/send.php" method="post" class="send_form" enctype="multipart/form-data">
+<div class="form_title">Форма отправки Ajax!</div>
+
+<div class="text_title">Имя:</div>
+<div><input type="text" class="form_field" name="Имя[1]" placeholder="Имя" /></div>
+
+<div class="text_title">E-mail:</div>
+<div><input type="text" class="form_field" name="E-mail[1]" placeholder="E-mail" /></div>
+
+<div class="text_title">Телефон:</div>
+<div><input type="text" class="form_field" name="Телефон[0]" placeholder="Телефон" /></div>
+
+<div class="checkbox_title">Предпочитаете жанр:</div>
+            <input type="checkbox" class="checkbox" name="Предпочитаете жанр[][1]" value="" checked style="display: none;" />
+<div><label><input type="checkbox" class="checkbox" name="Предпочитаете жанр[][1]" value="Комедия" /><font>Комедия</font></label></div>
+<div><label><input type="checkbox" class="checkbox" name="Предпочитаете жанр[][1]" value="Исторический" /><font>Исторический</font></label></div>
+<div><label><input type="checkbox" class="checkbox" name="Предпочитаете жанр[][1]" value="Мелодрама" /><font>Мелодрама</font></label></div>
+
+<div class="progress"><div class="bar"></div><div class="percent">0%</div></div>
+
+<div class="checkbox_title"></div>
+            <input type="checkbox" class="checkbox" name="Согласен с условиями[][1]" value="" checked style="display: none;" />
+<div><label><input type="checkbox" class="checkbox" name="Согласен с условиями[][1]" value="Принять условия" /><font>Принимаю условия!</font></label></div>
+
+<div><input type="submit" class="sub_form" name="submit" value="Отправить" /></div>
+
+<div class="status"></div> <!-- результат с send.php -->
+</form>
+</div>
+
+</div> <!-- ====/2=== -->
+
+<div style="float: left; width: 285px;"> <!-- ====3=== -->
+<!--
+  Можно добавлять/удалять любые поля input, textarea, radio, checkbox, select.
+  При добавлении полей обязательно!!! указывайте name="имя_поля[проверять да[1] или нет[0]]"
+-->
+<div class="form_body">
+<form action="/send_form/send.php" method="post" class="send_form" enctype="multipart/form-data">
+<div class="form_title">Форма отправки Ajax!</div>
+
+<div class="text_title">Имя:</div>
+<div><input type="text" class="form_field" name="Имя[1]" placeholder="Имя" /></div>
+
+<div class="text_title">E-mail:</div>
+<div><input type="text" class="form_field" name="E-mail[0]" placeholder="E-mail" /></div>
+
+<div class="text_title">Телефон:</div>
+<div><input type="text" class="form_field" name="Телефон[1]" placeholder="Телефон" /></div>
+
+<div class="progress"><div class="bar"></div><div class="percent">0%</div></div>
+
+<div><input type="submit" class="sub_form" name="submit" value="Отправить" /></div>
+
+<div class="status"></div> <!-- результат с send.php -->
+</form>
+</div>
+
+</div> <!-- ====/3=== -->
 
 </body>
 </html>
