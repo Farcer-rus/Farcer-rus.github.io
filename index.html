@@ -26,15 +26,7 @@
 	
 <!--АНКЕТА-->
 		
-<script>
-  $(function(){
-    var includes = $('[data-include]');
-    jQuery.each(includes, function(){
-      var file = 'send_form/' + $(this).data('include') + '.html';
-      $(this).load(file);
-    });
-  });
-</script>
+
 
 <!--АНКЕТА-->
 	
@@ -72,9 +64,13 @@
 </div>
 
 <!--КНОПКА-->
-<div data-include="header"></div>
-<div data-include="footer"></div>
-	
+<input type="button" class="show_form" value="Показать форму"/>
+<div class="feedback_form_bg">
+	<iframe src="/form.html" width="450" height="450"></iframe></div>
+<input type="button" class="show_form" value="Показать форму"/>
+<div class="feedback_form_bg">
+<iframe src="/send_form/form.html" width="450" height="450"></iframe></div>
+	<iframe src="/form.html" width="450" height="450">
 	
 
 <!--БЛОК2-->
