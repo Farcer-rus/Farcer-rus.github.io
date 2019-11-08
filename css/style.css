@@ -192,7 +192,7 @@ select:focus, input:focus {
 }
 .standart_head {
 	font-family: 'rodchenko', sans-serif;
-	margin-top: 25px;
+	margin-top: 10px;
 	width: 100%;
 	float: left;
 	font-size: 25px;
