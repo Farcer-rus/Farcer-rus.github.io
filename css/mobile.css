@@ -54,7 +54,6 @@
 	}
 	.download {
 		height: auto;
-		background: #d6dbde;
 	}
 	.download_head {
 	    margin-top: 29px;
@@ -63,6 +62,7 @@
 	.download_body {
 	    font-size: 18px;
 		margin-top: 10px;
+		margin-bottom: 15px;
 	}
 	.download .header_but_dop_button {
 	    margin-top: 20px;
