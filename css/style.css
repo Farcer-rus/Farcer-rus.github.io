@@ -242,7 +242,6 @@ select:focus, input:focus {
 	overflow: hidden;
 }
 .about_pr_list {
-	margin: 20px 0px 70px 0px;
 	float: left;
 	font-size: 18px;
 	color: #fff;
