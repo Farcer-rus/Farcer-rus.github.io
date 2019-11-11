@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $send = mail ($to, $subject, $message, $headers);
         if ($send == 'true') {
-            echo '<p class="success">Спасибо за отправку вашего сообщения!</p>';
+            echo '<p class="success" id="suc_msg">Спасибо за отправку вашего сообщения!</p>';
         } else {
           echo '<p class="fail"><b>Ошибка. Сообщение не отправлено!</b></p>';
         }
