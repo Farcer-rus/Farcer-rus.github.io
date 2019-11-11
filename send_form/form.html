@@ -10,7 +10,7 @@
 <script type="text/javascript">
 // функция передачи формы AJAX посредством "ajaxForm", связана с плагином: jquery.form.js
 jQuery(function() {
-var FormId = jQuery('.send_form:eq(0)'); // получаем class формы: eq(1)-какая форма на странице по счету, счет от "0", то есть "eq(0)"-первая, "eq(1)"-вторая и тд.
+var FormId = jQuery('.send_form:eq(0)'); // получаем class формы: eq(0)-какая форма на странице по счету, счет от "0", то есть "eq(0)"-первая, "eq(1)"-вторая и тд.
 var bar = jQuery('.bar:eq(0)'); // получаем class прогресс-бара
 var percent = jQuery('.percent:eq(0)'); // получаем class прогресс-бара
 var status = jQuery('.status:eq(0)'); // вывод результатов
@@ -62,6 +62,7 @@ function validate() {
 
 <body>
 
+<div style="float: left; width: 285px;"> <!-- ====1=== -->
 <!-- Простая форма HTML -->
 <!--
   Можно добавлять/удалять любые поля input, textarea, radio, checkbox, select.
@@ -89,6 +90,9 @@ function validate() {
 </form>
 </div>
 
+
+
+</div> <!-- ====/3=== -->
 
 </body>
 </html>

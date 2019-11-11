@@ -62,6 +62,7 @@ function validate() {
 
 <body>
 
+<div style="float: left; width: 285px;"> <!-- ====1=== -->
 <!-- Простая форма HTML -->
 <!--
   Можно добавлять/удалять любые поля input, textarea, radio, checkbox, select.
@@ -83,12 +84,8 @@ function validate() {
 <div class="textarea_title">Сообщение:</div>
 <div><textarea rows="3" class="form_field" name="Сообщение[0]"></textarea></div>
 
-<div><input type="submit" class="sub_form" name="submit" value="Отправить" /></div>
 
-<div class="status"></div> <!-- результат с send.php -->
-</form>
-</div>
-
+</div> <!-- ====/3=== -->
 
 </body>
 </html>
