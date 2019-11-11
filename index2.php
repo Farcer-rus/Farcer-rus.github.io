@@ -3,8 +3,6 @@
 <head>
 <meta charset="utf-8"/>
 <title>Форма обратной связи в модальном окне и без перезагрузки страницы</title>
-<meta name='author' content="Дмитрий Давыдов" />
-<meta name='copyright' content="Smartlanding.biz" />
 
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="modalform/libs/remodal/remodal.css">
