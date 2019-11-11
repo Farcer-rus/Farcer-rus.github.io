@@ -25,8 +25,148 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
 
 <!--КНОПКА-->
+<link type="text/css" href="/send_form/form.css" rel="stylesheet" />
+<script src="/send_form/jquery-1.9.1.min.js"></script>
+<script src="/send_form/jquery.form.js"></script>
+<script type="text/javascript">
+// функция передачи формы AJAX посредством "ajaxForm", связана с плагином: jquery.form.js
+jQuery(function() {
+var FormId = jQuery('.send_form:eq(0)'); // получаем class формы: eq(1)-какая форма на странице по счету, счет от "0", то есть "eq(0)"-первая, "eq(1)"-вторая и тд.
+var bar = jQuery('.bar:eq(0)'); // получаем class прогресс-бара
+var percent = jQuery('.percent:eq(0)'); // получаем class прогресс-бара
+var status = jQuery('.status:eq(0)'); // вывод результатов
+// получаем class формы <form>, сериализуем массив и отправляем в PHP файл
+  FormId.ajaxForm({
+    beforeSubmit: validate, // указывает на дополнительную валидацию script, false или true с "function validate()"
+    beforeSend: function() { // функция работает до отправки
+        status.empty();
+        var percentVal = '0%';
+        bar.width(percentVal)
+        percent.html(percentVal);
+    },
+    uploadProgress: function(event, position, total, percentComplete) { // функция работает во время отправки
+        var percentVal = percentComplete + '%';
+        bar.width(percentVal)
+        percent.html(percentVal);
+// изменение цвета прогресс-бара при загрузке в формате background-color: rgb(255, 255, 255)
+		bar.css('background-color','rgb('+Math.ceil((100+(percentComplete*1.5)))+','+Math.ceil(255-(percentComplete))+','+Math.ceil((80+(percentComplete/1.4)))+')');
+    },
+    success: function() { // функция работает после отправки
+        var percentVal = '100%';
+        bar.width(percentVal)
+        percent.html(percentVal);
+    },
+// вывод результатов после отправки с файла PHP
+	complete: function(xhr) {
+		status.html(xhr.responseText);
+	}
+  });
+});
+</script>
+
+<script type="text/javascript">
+// функция валидации на js-скрипте /\ пример /\
+function validate() {
+  jQuery('input:text[name *= 1]').each(function () {
+		if(jQuery(this).val() == '') {
+		  jQuery(this).addClass("error");
+		} else {
+		  jQuery(this).removeClass('error');
+		return true;
+		}
+	});
+}
+</script>
 
 	
+	
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  opacity: 0.8;
+}
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+.container {
+  padding: 16px;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+</style>	
 <!--КНОПКА-->	
 	
 </head>
@@ -61,8 +201,6 @@
 		</div>
 	</div>
 </div>
-
-<!--КНОПКА-->
 	
 <!--БЛОК2-->
 	
@@ -79,25 +217,59 @@
 <!--БЛОК3-->
 	
 <div class="logos block" id="manufactor">		
-<img src="/images/dm1.jpg" alt="Каталог формы" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<input type="image" src="/images/dm1.jpg" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" class="show_form"/>
 	<img src="/images/brr.jpg" alt="Каталог формы" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
-<img src="/images/dm2.jpg" alt="Каталог формы" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<input type="image" src="/images/dm2.jpg" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" class="show_form"/>
 	<img src="/images/brr.jpg" alt="Каталог формы" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />	
-<img src="/images/dm3.jpg" alt="Каталог формы" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<input type="image" src="/images/dm3.jpg" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" class="show_form"/>
 	<img src="/images/brr.jpg" alt="Каталог формы" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />	
-<img src="/images/dm4.jpg" alt="Каталог формы" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<input type="image" src="/images/dm4.jpg" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" class="show_form"/>
 	<img src="/images/brr.jpg" alt="Каталог формы" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
-<img src="/images/dm5.jpg" alt="Каталог формы" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<input type="image" src="/images/dm5.jpg" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" class="show_form"/>
 	<img src="/images/brr.jpg" alt="Каталог формы" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
-<img src="/images/dm6.jpg" alt="Каталог формы" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<input type="image" src="/images/dm6.jpg" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" class="show_form"/>
 	<img src="/images/brr.jpg" alt="Каталог формы" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
-<img src="/images/dm7.jpg" alt="Каталог формы" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<input type="image" src="/images/dm7.jpg" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" class="show_form"/>
 	<img src="/images/brr.jpg" alt="Каталог формы" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
-<img src="/images/dm8.jpg" alt="Каталог формы" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<input type="image" src="/images/dm8.jpg" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" class="show_form"/>
 	<img src="/images/brr.jpg" alt="Каталог формы" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
-<img src="/images/dm9.jpg" alt="Каталог формы" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<input type="image" src="/images/dm9.jpg" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" class="show_form"/>
 	<img src="/images/brr.jpg" alt="Каталог формы" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 </div>
+	
+	
+<!--КНОПКА-->	
+	
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/send_form/send.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Ф.И.О.</b></label>
+      <input type="text" class="form_field" name="Имя[1]" placeholder="Имя" />
+
+      <label for="psw"><b>Почта</b></label>
+      <input type="text" class="form_field" name="E-mail[1]" placeholder="E-mail" />
+	    
+      <label for="psw"><b>Телефон</b></label>
+      <input type="text" class="form_field" name="Телефон[0]" placeholder="Телефон" />
+	    
+<div class="textarea_title"><b>Сообщение:</b></div>
+<div><textarea rows="3" class="form_field" style="width:100%" placeholder="Дополнительно.." name="Сообщение[0]"></textarea></div>
+	    
+      <button type="submit" class="sub_form" name="submit" value="Отправить" >Отправить</button>
+<div class="status"></div>
+    </div>
+  </form>
+</div>
+	
+	
+<!--КНОПКА-->	
+	
 	
 <!--БЛОК4-->
 	
@@ -213,7 +385,16 @@
 	</div>
 </div>
 	
-<!--ЗАКАЗ-->	
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 	
 
 </body>
