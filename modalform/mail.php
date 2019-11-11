@@ -26,8 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	    }
     }
 
-    $to = "dima.d.v@yandex.ru"; /*Укажите адрес, на который должно приходить письмо*/
-    $sendfrom = "smart-landing@yandex.ru"; /*Укажите адрес, с которого будет приходить письмо */
+    $to = "zanoskoai@gmail.com"; /*Укажите адрес, на который должно приходить письмо*/
+    $sendfrom = "basket@gloriauniform.ru"; /*Укажите адрес, с которого будет приходить письмо */
     $headers  = "From: " . strip_tags($sendfrom) . "\r\n";
     $headers .= "Reply-To: ". strip_tags($sendfrom) . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
@@ -49,5 +49,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   	echo '<p class="fail">Ошибка. Вы заполнили не все обязательные поля!</p>';
   }
 } else {
-  header ("Location: http://smartlanding.biz"); // главная страница вашего лендинга
+  header ("Location: http://www.gloriauniform.ru/"); // главная страница вашего лендинга
 }
