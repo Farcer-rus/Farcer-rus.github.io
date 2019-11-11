@@ -23,73 +23,15 @@
 	<script src="/js/main.js"></script>
 	<script src="/js/jquery.validate.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="modalform/libs/remodal/remodal.min.js"></script>
+<script src="modalform/js/form.js"></script>
+<link rel="stylesheet" href="modalform/libs/remodal/remodal.css">
+<link rel="stylesheet" href="modalform/libs/remodal/remodal-default-theme.css">
+<link rel="stylesheet" href="modalform/css/formstyle.css">
 
 <!--КНОПКА-->
-	
-<script src="/js/jquery.js"></script>
-<script>
-function send_form() { 
-var msg = $("#forma").serialize();
-$.ajax({
-type: "POST",
-url: "/send_form.php",
-data: msg,
-success: function(data) {
-alert("Сообщение отправлено");
-setTimeout(function () {
-$(".feedback_form_bg").fadeOut();}, 1000);
-},
-error:  function(xhr, str){
-alert("Возникла ошибка!");
-setTimeout(function () {$(".feedback_form_bg").fadeOut();}, 1000);
-}
-});
-}
-</script>
-<script>
-$(document).ready(function(){
-$('.show_form').click(function() { 
-$(".feedback_form_bg").css("display","block");
-});
-$('.feedback_form_bg').click(function() { 
-$(".feedback_form_bg").css("display","none");
-});
-$('#forma').click(function(e){  
-e.stopPropagation();
-});
-});
-</script>
-<style>
-.feedback_form_bg{
-position:fixed;
-width:100%;height:100%;
-left:0px;top:0px;
-background:rgba(0,0,0,0.5);
-display:none;
-}
-#forma{
-position:fixed;
-left:50%;top:50%;
-margin-left:-150px;margin-top:-100px;
-width:300px;height:200px;
-background:white;
-padding-left:20px;padding-top:20px;
-}
-#forma input[type="text"]{
-width:200px;height:25px;
-border:1px solid whitesmoke;
-padding-left:7px;
-margin-bottom:10px;
-}
-#forma input[type="submit"]{
-background:black;
-border:none;
-width:150px;
-height:30px;
-color:white;
-cursor:pointer;
-}
-</style>
+
 	
 <!--КНОПКА-->	
 	
@@ -149,6 +91,47 @@ cursor:pointer;
 </div>
 
 </div>
+
+	
+<a class="linkButton" data-remodal-target="firstModal">Оставить заявку</a>
+<div class="remodal" data-remodal-id="firstModal" data-remodal-options="hashTracking: false,closeOnConfirm: false">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <div class="formArea">
+   
+  <form id="secondForm" class="form" autocomplete="off">
+  <p class="formTitle">Закажите обратный звонок и наш консультант свяжется с вами</p>
+  <p class="msgs"></p>
+ 
+      <fieldset class="form-fieldset ui-input __first">
+        <input name="uname" type="text" id="username" required tabindex="0"/>
+        <label for="username">
+          <span data-text="Введите ваше имя">Введите ваше имя</span>
+        </label>
+      </fieldset>
+ 
+      <fieldset class="form-fieldset ui-input __second">
+        <input name="uphone" type="tel" id="phone" tabindex="0" required pattern="^[ 0-9]+$"/>
+        <label for="phone">
+          <span data-text="Введите ваш телефон">Введите ваш телефон</span>
+        </label>
+      </fieldset>
+ 
+      <input name="formInfo" class="formInfo" type="hidden" value=""/>
+ 
+      <div class="form-footer">
+        <input type="submit" class="formBtn" value="Обратный звонок" />
+      </div>
+      <p class="formCreator"><a href="https://smartlanding.biz">smartlanding.biz</a></p>
+  </form>
+  </div>
+</div>	
+	
+	
+	
+	
+	
+	
+	
 	
 <!--БЛОК3-->
 	
