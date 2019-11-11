@@ -1,207 +1,40 @@
-body {
-    font: 16px 'PT Sans',
-        sans-serif;
-    background: url("../img/bg-main.jpg") center top no-repeat;
-
+@import url(reset.css);
+body{
+  background: #662a55;
+  font-family: 'Roboto', sans-serif;
 }
-
-.form-wrapper {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 460px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(251, 251, 251, 0.2);
-    padding: 30px;
-    border-radius: 5px;
+.butWrap{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
 }
-
-.contact-form {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 400px;
-    background: #fff;
-    padding: 0 30px 30px;
-    box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
-    border-radius: 2px;
+.linkButton{
+  display: block;
+  width: 290px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 0;
+  background: #532446;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  color: #b8c2d1;
+  outline: 0;
+  box-shadow: 0 1px 2px #260c1f;
+  transition: background-color 300ms cubic-bezier(0.215, 0.61, 0.355, 1), color 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-
-.contact-form__title {
-    box-sizing: border-box;
-    margin: 0 -30px 30px;
-    padding: 15px 30px;
-    width: calc(100% + 60px);
-    line-height: 1.5;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #000;
-    background: url('../img/bg.png') top left repeat,
-        #4a90e8;
-    color: #fff;
+.linkButton:hover {
+  box-shadow: 0 4px 8px #260c1f;
+  transition: .2s;
+  zoom:1.005;
 }
-
-.contact-form__description {
-    display: none;
-    text-align: center;
-    font-size: 18px;
-}
-
-.contact-form__input-wrapper {
-    margin-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.contact-form__input {
-    width: 100%;
-    height: 50px;
-    padding: 0 15px;
-    box-sizing: border-box;
-    border: 1px solid #e2e2e2;
-    background: #fbfbfb;
-    border-radius: 5px;
-    font: 16px 'PT Sans',
-        sans-serif;
-    -webkit-appearance: none;
-}
-
-.contact-form__text {
-    height: 80px;
-    padding: 15px;
-    resize: vertical;
-    font: 16px 'PT Sans',
-        sans-serif;
-}
-
-.contact-form__checkbox {
-    -webkit-appearance: checkbox;
-    width: 15px;
-    height: 15px;
-    margin: 0 15px 0 0;
-}
-
-.contact-form__checkbox-label {
-    width: calc(100% - 30px);
-    font-size: 13px;
-}
-
-.contact-form__checkbox-label a {
-    text-decoration: none;
-
-}
-
-.contact-form__file {
-    padding: 12px 15px;
-}
-
-.contact-form__error {
-    font-size: 14px;
-    width: 100%;
-}
-
-.contact-form__button {
-    background: #4a90e8;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 240px;
-    margin: 30px auto 0;
-    border-radius: 5px;
-    height: 50px;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 700;
-    border: none;
-    -webkit-appearance: none;
-    cursor: pointer;
-    outline: none;
-    transition: .3s;
-    padding: 2px 0 0 0;
-}
-
-.contact-form__button:hover {
-    transition: .3s;
-    background: #2eb7ab;
-}
-
-@media (max-width: 480px) {
-    .form-wrapper {
-        padding: 15px;
-    }
-
-    .contact-form {
-        padding: 0 15px 15px;
-    }
-
-    .contact-form__title {
-        margin: 0 -15px 30px;
-        padding: 15px 30px;
-        width: calc(100% + 30px);
-        font-size: 18px;
-    }
-
-    .contact-form__checkbox {
-        margin-top: 1px;
-    }
-
-    .contact-form__checkbox-label {
-        font-size: 14px;
-    }
-
-    .contact-form__input-wrapper {
-        align-items: flex-start;
-    }
-
-}
-
-/* Стили страницы благодарности */
-
-.thank-you-page {
-    background: url('./img/bg.png') top center no-repeat;
-    padding: 15px;
-}
-
-.thank-you-page__title {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 30px;
-}
-
-.thank-you-page__descriptor {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.thank-you-page__button {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 290px;
-    margin: 0 auto;
-    background: #4a90e8;
-    transition: .3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 3px;
-    height: 50px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    -webkit-appearance: none;
-    outline: none;
-    cursor: pointer;
-    font-weight: 700;
-
-}
-
-.thank-you-page__button:hover {
-    transition: .3s;
-    background: #2eb7ab;
-}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {}
+/*Доп запросы*/
+@media only screen and (max-width : 680px) {}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 486px) {}
+@media only screen and (max-width : 380px) {}
