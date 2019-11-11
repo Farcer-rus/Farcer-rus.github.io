@@ -116,26 +116,19 @@
  
 <div id="dialog-form" title="Create new user">
   <p class="validateTips">All form fields are required.</p>
- 
-<form action="/send_form/send.php" method="post" class="send_form" enctype="multipart/form-data">
-<div class="form_title">Форма отправки Ajax!</div>
+  <form>
+    <fieldset>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" value="Jane Smith" class="text ui-widget-content ui-corner-all">
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email" value="jane@smith.com" class="text ui-widget-content ui-corner-all">
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" value="xxxxxxx" class="text ui-widget-content ui-corner-all">
 
-<div class="text_title">Имя:</div>
-<div><input type="text" class="form_field" name="Имя[1]" placeholder="Имя" /></div>
-
-<div class="text_title">E-mail:</div>
-<div><input type="text" class="form_field" name="E-mail[1]" placeholder="E-mail" /></div>
-
-<div class="text_title">Телефон:</div>
-<div><input type="text" class="form_field" name="Телефон[0]" placeholder="Телефон" /></div>
-
-<div class="textarea_title">Сообщение:</div>
-<div><textarea rows="3" class="form_field" name="Сообщение[0]"></textarea></div>
-
-<div><input type="submit" class="sub_form" name="submit" value="Отправить" /></div>
-
-<div class="status"></div> <!-- результат с send.php -->
-</form>
+      <!-- Allow form submission with keyboard without duplicating the dialog button -->
+      <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+    </fieldset>
+  </form>
 </div>
  
  
