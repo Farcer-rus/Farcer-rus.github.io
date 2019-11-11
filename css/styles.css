@@ -1,0 +1,694 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'PT_SANS-WEB-REGULAR';
+  src: url('../fonts/PT_SANS-WEB-REGULAR.eot');
+  src: url('../fonts/PT_SANS-WEB-REGULAR.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PT_SANS-WEB-REGULAR.woff') format('woff'),
+  url('../fonts/PT_SANS-WEB-REGULAR.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PT_SANS-WEB-BOLD';
+  src: url('../fonts/PT_SANS-WEB-BOLD.eot');
+  src: url('../fonts/PT_SANS-WEB-BOLD.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PT_SANS-WEB-BOLD.woff') format('woff'),
+  url('../fonts/PT_SANS-WEB-BOLD.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bender-BoldItalic';
+  src: url('../fonts/Bender-BoldItalic.eot');
+  src: url('../fonts/Bender-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Bender-BoldItalic.woff') format('woff'),
+  url('../fonts/Bender-BoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  overflow-x: hidden;
+  cursor: default;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+* {
+  font-family: 'PT_SANS-WEB-REGULAR', sans-serif;
+  color: #fff;
+}
+
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.phone a {
+  font-family: 'PT_SANS-WEB-BOLD', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.phone a:hover, .phone a:focus {
+  color: #eeeeee;
+}
+
+.zakazat_zvonok button {
+  font-family: 'PT_SANS-WEB-BOLD', sans-serif;
+  color: #00a7ee;
+  font-size: 14px;
+  background-color: #fff;
+  padding: 11px 15px 10px 15px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  transition: 0.3s;
+  text-transform: uppercase;
+  outline: none !important;
+
+}
+.zakazat_zvonok button:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.37);
+  background-image: url("../img/bg_button.jpg");
+  color: #fff;
+  border: 1px solid #0083ce;
+}
+
+#main {
+    overflow-y: hidden;
+}
+
+.img {
+  display: block;
+  padding-left: 50px;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  padding-top: 110px;
+}
+
+.text p {
+  font-family: 'Bender-BoldItalic', sans-serif;
+  font-size: 22px;
+  padding-left: 50px;
+}
+
+.text p > span {
+	font-family: 'Bender-BoldItalic', sans-serif;
+    font-size: 22px;
+	background-color: #009fe3;
+	padding: 3px 6px;
+}
+
+.pos_absolute {
+  position: absolute;
+  z-index: 1000;
+  top: 220px;
+}
+
+.pos_absolute2 {
+  position: absolute;
+  z-index: 1000;
+  top: 280px;
+}
+
+.pos_relative {
+  position: relative;
+}
+
+.slider_navig {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider_navig2, .slider_navig3, .slider_navig4, .slider_navig5, .slider_navig6, .slider_navig0 {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.owl-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  outline: none !important;
+  border: none !important;
+  background-color: #fff;
+  position: relative;
+  transition: 0.3s;
+}
+.owl-next:hover {
+  background-image: url("../img/bg_button.jpg");
+}
+.owl-next:hover span {
+  filter: invert(1);
+}
+.owl-next span {
+  content: "";
+  background-image: url("../img/arrow.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: rotate(180deg);
+  font-size: 30px;
+  display: block;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: 0.3s;
+}
+
+.owl-prev {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  outline: none !important;
+  border: none !important;
+  background-color: #fff;
+  position: relative;
+  transition: 0.3s;
+  }
+.owl-prev:hover {
+  background-image: url("../img/bg_button.jpg");
+}
+.owl-prev:hover span {
+  filter: invert(1);
+}
+.owl-prev span {
+  background-image: url("../img/arrow.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 30px;
+  display: block;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: 0.3s;
+}
+
+.skachat_katalog button {
+  padding: 20px 25px 19px 80px;
+  background-image: url("../img/bg_button.jpg");
+  outline: none !important;
+  border: none !important;
+  text-transform: uppercase;
+  border-radius: 50px;
+  position: relative;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  transition: 0.3s;
+}
+.skachat_katalog button::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/book.png);
+  width: 41px;
+  height: 30px;
+  left: 28px;
+  top: 17px;
+  z-index: 1500;
+}
+
+.skachat_katalog button:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.37);
+}
+
+.footer_img img {
+  width: 100%;
+}
+
+.text_footer {
+  margin-top: -90px;
+}
+
+.text_footer p {
+  font-size: 14px;
+}
+
+.rightbotder {
+  position: relative;
+}
+
+.rightbotder::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 100px;
+  top: -30px;
+  right: 0px;
+  background-color: #5a5b5f;
+}
+
+.paddingright30 {
+  padding-right: 30px;
+}
+.paddingleft30 {
+  padding-left: 30px;
+}
+
+.modal-content {
+  background-image: url("../img/elements.png");
+  width: 432px;
+  height: 600px;
+  position: relative;
+  margin: auto;
+}
+
+.modal-header {
+  border: none;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.modal-footer {
+  border: none;
+}
+
+h5.modal-title {
+  color: #057bc6;
+  text-transform: uppercase;
+  width: 100%;
+  font-family: 'PT_SANS-WEB-BOLD', sans-serif;
+  font-size: 26px;
+  padding: 10px 0px 20px;
+}
+
+.modal-header span {
+  color: #43484b;
+  font-family: 'PT_SANS-WEB-REGULAR', sans-serif;
+  width: 100%;
+  font-size: 18px;
+}
+
+h5.modal-title > span {
+  color: #313437;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-family: 'PT_SANS-WEB-BOLD', sans-serif;
+}
+
+.modalclose {
+  position: absolute;
+  color: #057bc6;
+  padding: 0px;
+  border: none !important;
+  outline: none !important;
+  background: none !important;
+  top: 0px;
+  right: 7px;
+}
+
+.modalclose:hover, .modalclose:focus, .modalclose:active {
+  border: none !important;
+  outline: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  color: #057bc6;
+}
+
+.modalform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalform > input {
+  width: 350px;
+  padding: 15px 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid #bfbfbf;
+  border-radius: 30px;
+  color: #0d0d0d;
+  font-size: 18px;
+}
+
+.modalform > input:hover, .modalform > input:focus, .modalform > input:active {
+  border: 1px solid #bfbfbf;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.modal-body {
+  flex: unset;
+}
+
+.sumbitmodalform {
+  background-image: url("../img/bg_button.jpg");
+  width: 200px;
+  margin: auto;
+  margin-top: 17px;
+  border-radius: 50px;
+  padding: 15px 0px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.modal-content p {
+  font-size: 14px;
+  color: #43484b;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.modal-content p > a {
+  color: #43484b;
+}
+
+.modal-body {
+    padding-bottom: 0px;
+}
+
+.infomodal .modal-content {
+  height: auto;
+}
+
+.owl-dots {
+  position: absolute;
+  left: 0;
+  top: 144px;
+  display: flex;
+  flex-direction: column;
+  margin-left: -50px;
+}
+
+.owl-dot {
+  display: block;
+  width: 1px;
+  height: 50px;
+  background-color: #616061;
+  transition: 0.3s;
+}
+
+.owl-dot > span {
+  display: block;
+  width: 1px;
+  height: 50px;
+  background-color: #616061;
+  transition: 0.3s;
+}
+
+.owl-dot.active {
+  width: 3px;
+  margin-left: -1px;
+}
+
+.owl-dot.active > span {
+  display: block;
+  width: 3px;
+  height: 50px;
+  background-color: #4cbaeb;
+}
+
+#navigation {
+  height: 70px;
+}
+
+.navig {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.navig a {
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.navig a.active {
+  color: #009fe3;
+  text-decoration: underline;
+}
+
+.podpis {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.item_navig {
+  display: none;
+}
+
+.item_navig .pos_absolute, .item_navig .pos_absolute2 {
+  display: none;
+}
+
+.item_navig.active {
+  display: block;
+}
+
+.item_navig.active .pos_absolute, .item_navig.active .pos_absolute2 {
+  display: block;
+}
+
+.owl-dots {
+  display: none !important;
+}
+.skachat_katalog {
+	padding-left: 50px;
+  }
+
+@media (max-width: 1199px) {
+  .text p {
+    font-size: 19px;
+    padding-left: 30px;
+  }
+  .skachat_katalog {
+	padding-left: 30px;
+  }
+  .text_footer p {
+    font-size: 13px;
+  }
+  .text p > span {
+	 font-size: 19px;
+  }
+}
+
+@media (max-width: 991px) {
+  .phone a {
+    font-size: 16px;
+  }
+  .header img {
+    width: 100%;
+  }
+  .text p {
+    font-size: 16px;
+  }
+  .skachat_katalog button {
+    padding: 20px 20px 19px 45px;
+    font-size: 14px;
+  }
+  .skachat_katalog button::after {
+    background-size: cover;
+    width: 24px;
+    height: 17px;
+    left: 12px;
+    top: 22px;
+  }
+  .pos_absolute {
+    top: 192px;
+  }
+  .pos_absolute2 {
+    top: 243px;
+  }
+  .mobilenone {
+    display: none;
+  }
+  .text_footer {
+    margin-top: 0px;
+    padding-top: 50px;
+  }
+  .rightbotder::after {
+    display: none;
+  }
+  .text p > span {
+    font-family: 'Bender-BoldItalic', sans-serif;
+    font-size: 16px;
+  }
+  .text p {
+    padding-left: 0px;
+  }
+  .skachat_katalog {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobilecenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+  .mobilecenter p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+  .header img {
+    max-width: 280px;
+  }
+  .headermobilecenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .paddingright30 {
+    padding: 0px;
+  }
+  .mobilepaddingtop {
+    padding-top: 15px;
+  }
+  .mobilepaddingtop:last-child {
+    padding-bottom: 30px;
+  }
+  .text p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .text {
+    padding-top: 15px;
+  }
+  .pos_absolute2 {
+    top: unset;
+    bottom: 0px;
+  }
+  .skachat_katalog {
+    text-align: center;
+  }
+  .skachat_katalog button {
+    padding: 20px 36px 19px 77px;
+    font-size: 18px;
+  }
+  .item > .row {
+    flex-direction: column-reverse;
+  }
+  .item {
+    padding-bottom: 90px;
+  }
+  .skachat_katalog button::after {
+    background-size: cover;
+    width: 42px;
+    height: 30px;
+    left: 22px;
+    top: 18px;
+  }
+  .mobilepaddingtop {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .mobilepaddingtop:first-child {
+    padding-top: 0px;
+  }
+  .rightbotder {
+    border-bottom: 1px solid #7f7f7f;
+  }
+  .podpis {
+    margin: auto;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .navig a {
+    padding: 0px 10px 0px 10px;
+  }
+  .navig {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 15px;
+  }
+  .img {
+    padding-left: 0px;
+  }
+  .item_navig.active {
+    padding-bottom: 50px;
+  }
+  .pos_absolute2 {
+    top: unset;
+    bottom: -50px;
+  }
+  .podpis {
+    bottom: 17px;
+  }
+}
+
+@media (max-width: 575px) {
+  .modal-content {
+    background-image: url(../img/elements.png);
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin: auto;
+  }
+  .modalform > input {
+    width: 270px;
+  }
+  .modal-header span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 450px) {
+  .mobilebr {
+	display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .skachat_katalog button {
+    padding: 20px 20px 19px 60px;
+    font-size: 16px;
+  }
+  .skachat_katalog button::after {
+    background-size: cover;
+    width: 34px;
+    height: 24px;
+    left: 18px;
+    top: 20px;
+  }
+
+}
+
+@media (max-width: 350px) {
+
+}
+
+@media (max-width: 320px) {
+
+}
