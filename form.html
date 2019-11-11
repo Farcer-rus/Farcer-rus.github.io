@@ -202,20 +202,19 @@ img.avatar {
   <form class="modal-content animate" action="/action_page.php" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="uname"><b>Ф.И.О.</b></label>
+      <input type="text" class="form_field" name="Имя[1]" placeholder="Имя" />
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <label for="psw"><b>Почта</b></label>
+      <input type="text" class="form_field" name="E-mail[1]" placeholder="E-mail" />
+	    
+      <label for="psw"><b>Телефон</b></label>
+      <input type="text" class="form_field" name="Телефон[0]" placeholder="Телефон" />
         
       <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
     </div>
   </form>
 </div>
