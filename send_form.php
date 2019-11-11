@@ -1,8 +1,10 @@
 <?php
-    $mail = array(  
-        'to' => "zanoskoai@gmail.com",  
-        'subject' => "Новое сообщение",  
-        'message' => "<html><body><p>Текст сообщения</p></body></html>",  
-        'headers' => "MIME-Version: 1.0\r\n"."Content-type: text/html; charset=utf-8\r\n"."From: Эта кириллица выводится иероглифами <frommail@site.ru>\r\n");  
-
-    mail($mail['to'], $mail['subject'], $mail['message'], iconv ('utf-8', 'windows-1251', $mail['headers']));
+$fio= $_POST['fio'];
+$phone= $_POST['phone'];
+$email= $_POST['email'];
+$adres= $_POST['adres'];
+$emailTo = 'zz441766@gmail.com';
+$body = "$fio \n\n$phone\n\n$email \n\n$adres";
+$headers = "Content-Type: text/plain; charset=utf-8\r\n".'From: MySite <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $emailTo;
+mail($emailTo, $fio, $body, $headers);
+$emailSent = true;
