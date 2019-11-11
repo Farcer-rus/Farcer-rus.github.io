@@ -6,11 +6,11 @@
 	const MSGSNAMEERROR = "⚠ Поле обязательно для заполнения";
 
 	// Телефон
-	const TELISREQUIRED = false;
+	const TELISREQUIRED = true;
 	const MSGSTELERROR = "⚠ Поле обязательно для заполнения";
 
 	// Email
-	const EMAILISREQUIRED = false;
+	const EMAILISREQUIRED = true;
 	const MSGSEMAILERROR = "⚠ Поле обязательно для заполнения";
 	const MSGSEMAILINCORRECT = "⚠ Некорректный почтовый адрес";
 
@@ -20,11 +20,11 @@
 
 	// Файл
 	const FILEISREQUIRED = false;
-	const MSGSFILEERROR = "⚠ Поле обязательно для заполнения";
+	const MSGSFILEERROR = "⚠ Забыли добавить файл";
 
 	// Соглашение
-	const AGGREMENTISREQUIRED = false;
-	const MSGSAGGREMENTERROR = "⚠ Поле обязательно для заполнения"; 
+	const AGGREMENTISREQUIRED = true;
+	const MSGSAGGREMENTERROR = "⚠ Примите пользовательское соглашение"; 
 
 	// Сообщение об успешной отправке
 	const MSGSSUCCESS = "Сообщение успешно отправлено";
@@ -40,10 +40,10 @@
 	// *** /SMTP *** //
 
   // Почта с которой будет приходить письмо
-	const SENDER = 'basket@gloriauniform.ru';
+	const SENDER = 'vtopetop@yandex.ru';
 	
 	// Почта на которую будет приходить письмо
-	const CATCHER = 'zanoskoai@gmail.com';
+	const CATCHER = 'dima.d.v@list.ru';
 	
 	// Тема письма
 	const SUBJECT = 'Заявка с сайта';

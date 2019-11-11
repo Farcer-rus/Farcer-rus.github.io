@@ -52,6 +52,9 @@ body {
 
 .contact-form__input-wrapper {
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .contact-form__input {
@@ -62,11 +65,43 @@ body {
     border: 1px solid #e2e2e2;
     background: #fbfbfb;
     border-radius: 5px;
-    font-size: 16px;
+    font: 16px 'PT Sans',
+        sans-serif;
+    -webkit-appearance: none;
+}
+
+.contact-form__text {
+    height: 80px;
+    padding: 15px;
+    resize: vertical;
+    font: 16px 'PT Sans',
+        sans-serif;
+}
+
+.contact-form__checkbox {
+    -webkit-appearance: checkbox;
+    width: 15px;
+    height: 15px;
+    margin: 0 15px 0 0;
+}
+
+.contact-form__checkbox-label {
+    width: calc(100% - 30px);
+    font-size: 13px;
+}
+
+.contact-form__checkbox-label a {
+    text-decoration: none;
+
+}
+
+.contact-form__file {
+    padding: 12px 15px;
 }
 
 .contact-form__error {
-    font-size: .875rem;
+    font-size: 14px;
+    width: 100%;
 }
 
 .contact-form__button {
@@ -99,13 +134,74 @@ body {
     .form-wrapper {
         padding: 15px;
     }
+
     .contact-form {
         padding: 0 15px 15px;
     }
+
     .contact-form__title {
         margin: 0 -15px 30px;
         padding: 15px 30px;
         width: calc(100% + 30px);
         font-size: 18px;
     }
+
+    .contact-form__checkbox {
+        margin-top: 1px;
+    }
+
+    .contact-form__checkbox-label {
+        font-size: 14px;
+    }
+
+    .contact-form__input-wrapper {
+        align-items: flex-start;
+    }
+
+}
+
+/* Стили страницы благодарности */
+
+.thank-you-page {
+    background: url('./img/bg.png') top center no-repeat;
+    padding: 15px;
+}
+
+.thank-you-page__title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.thank-you-page__descriptor {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.thank-you-page__button {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 290px;
+    margin: 0 auto;
+    background: #4a90e8;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    height: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+
+}
+
+.thank-you-page__button:hover {
+    transition: .3s;
+    background: #2eb7ab;
 }

@@ -34,10 +34,35 @@
             }
         } 
     }
-    
-    if((empty($_POST['email']) && empty($_POST['tel'])) && (!EMAILISREQUIRED && !TELISREQUIRED)) {
-        $msgs['attantion'] = 'Заполните хотя бы одно контактное поле для связии с вами';
+
+    if (isset($_POST['text']) ) {
+        if(empty($_POST['text']) && TEXTISREQUIRED) {
+            $msgs['text'] = MSGSTEXTERROR;
+        } else {
+            if (!empty($_POST['text'])) {
+                $text = "<b>Сообщение: </b> " . trim(strip_tags($_POST['text'])) . "<br>";
+            }
+        }
     }
+
+    foreach ($_FILES["files"]["error"] as $key => $error) {
+        if (!$error == UPLOAD_ERR_OK  && FILEISREQUIRED) {
+             $msgs['file'] = MSGSFILEERROR;
+        }
+    }
+
+    if(empty($_POST['agreement']) && AGGREMENTISREQUIRED) {
+        $msgs['agreement'] = MSGSAGGREMENTERROR;
+    } else {
+        if (!empty($_POST['agreement'])) {
+            $agreement = "<b>Соглашение: </b> пользовательское соглашение принято " . "<br>";
+        }
+    }
+
+    
+     if((empty($_POST['email']) && empty($_POST['tel'])) && (!EMAILISREQUIRED && !TELISREQUIRED)) {
+         $msgs['attantion'] = 'Заполните хотя бы одно контактное поле для связии с вами';
+     }
 
 	if ($msgs) {
 	    echo json_encode($msgs);
