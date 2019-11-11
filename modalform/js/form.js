@@ -10,15 +10,19 @@ $(document).ready(function () {
             type: "POST",
             url: 'modalform/mail.php',
             data: formNm.serialize(),
-            success: function (data) {
+success: function (data) {
               // Вывод сообщения об успешной отправке
               message.html(data);
               formTitle.css("display","none");
               setTimeout(function(){
                 //$(formNm).css("display","block");
                 $('.formTitle').css("display","block");
+                if ( $("#suc_msg").hasClass("success") ) {
+                    $('.remodal-close').click();
+                }
                 $('.msgs').html('');
                 $('input').not(':input[type=submit], :input[type=hidden]').val('');
+
               }, 3000);
             },
             error: function (jqXHR, text, error) {
