@@ -79,80 +79,39 @@
 
 </div>
 
-$(document).ready(function () {
-    $("form").submit(function () {
-        // Получение ID формы
-        var formID = $(this).attr('id');
-        // Добавление решётки к имени ID
-        var formNm = $('#' + formID);
-        var message = $(formNm).find(".msgs"); // Ищет класс .msgs в текущей форме  и записываем в переменную
-        var formTitle = $(formNm).find(".formTitle"); // Ищет класс .formtitle в текущей форме и записываем в переменную
-        $.ajax({
-            type: "POST",
-            url: 'modalform/mail.php',
-            data: formNm.serialize(),
-            success: function (data) {
-              // Вывод сообщения об успешной отправке
-              message.html(data);
-              formTitle.css("display","none");
-              setTimeout(function(){
-                //$(formNm).css("display","block");
-                $('.formTitle').css("display","block");
-                $('.msgs').html('');
-                $('input').not(':input[type=submit], :input[type=hidden]').val('');
-              }, 3000);
-            },
-            error: function (jqXHR, text, error) {
-                // Вывод сообщения об ошибке отправки
-                message.html(error);
-                formTitle.css("display","none");
-                // $(formNm).css("display","none");
-                setTimeout(function(){
-                  //$(formNm).css("display","block");
-                  $('.formTitle').css("display","block");
-                  $('.msgs').html('');
-                  $('input').not(':input[type=submit], :input[type=hidden]').val('');
-                }, 3000);
-            }
-        });
-        return false;
-    });
-    //для стилей формы
-      var $input = $('.form-fieldset > input');
-      $input.blur(function (e) {
-        $(this).toggleClass('filled', !!$(this).val());
-      });
-});	
-<a class="linkButton" data-remodal-target="firstModal">Оставить заявку</a>
+	
+<div class="butWrap">
+  <a class="linkButton" data-remodal-target="firstModal" title="Консультация">Получить консультацию</a>	
+</div>	
+	
 <div class="remodal" data-remodal-id="firstModal" data-remodal-options="hashTracking: false,closeOnConfirm: false">
   <button data-remodal-action="close" class="remodal-close"></button>
   <div class="formArea">
-   
-  <form id="secondForm" class="form" autocomplete="off">
-  <p class="formTitle">Закажите обратный звонок и наш консультант свяжется с вами</p>
-  <p class="msgs"></p>
- 
+    
+    <form id="firstForm" class="form" autocomplete="off">
+    <p class="formTitle">Оставьте ваши контактные данные и наш консультант свяжется с вами</p>
+    <p class="msgs"></p>
       <fieldset class="form-fieldset ui-input __first">
-        <input name="uname" type="text" id="username" required tabindex="0"/>
+        <input name="uname" type="text" id="username" tabindex="0"/>
         <label for="username">
           <span data-text="Введите ваше имя">Введите ваше имя</span>
         </label>
       </fieldset>
- 
+
       <fieldset class="form-fieldset ui-input __second">
-        <input name="uphone" type="tel" id="phone" tabindex="0" required pattern="^[ 0-9]+$"/>
-        <label for="phone">
-          <span data-text="Введите ваш телефон">Введите ваш телефон</span>
+        <input name="uemail" type="email" id="email" tabindex="0" />
+        <label for="email">
+          <span data-text="Введите ваш e-mail">Введите ваш e-mail</span>
         </label>
       </fieldset>
- 
+
       <input name="formInfo" class="formInfo" type="hidden" value=""/>
- 
+
       <div class="form-footer">
-        <input type="submit" class="formBtn" value="Обратный звонок" />
+        <input type="submit" class="formBtn" value="Отправить заявку" />
       </div>
-      <p class="formCreator"><a href="https://smartlanding.biz">smartlanding.biz</a></p>
-  </form>
+      <p class="formCreator"><a href="http://smartlanding.biz">smartlanding.biz</a></p>
+    </form>
   </div>
 </div>	
 	
@@ -302,7 +261,12 @@ $(document).ready(function () {
 	
 <!--ЗАКАЗ-->	
 	
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(".linkButton").click(function() {
+    $( "input[name*='formInfo']" ).val($(this).attr( "title" ));
+});
+</script>
 <script src="modalform/libs/remodal/remodal.min.js"></script>
 <script src="modalform/js/form.js"></script>
 </body>
