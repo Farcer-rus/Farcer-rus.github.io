@@ -87,7 +87,7 @@ if(!empty($_FILES['attachfile']['name'][0])){
     $errors[] = 'Письмо не отправлено!<br>Ошибка: '.$mail->ErrorInfo;
   } else {
     $success[] = 'Спасибо! Сообщение отправлено!';
-	 header('Refresh: 5; URL='.$_SERVER['HTTP_REFERER'].'');
+	 header('Refresh: 2; URL='.$_SERVER['HTTP_REFERER'].'');
   }
 
 // очищаем переменные
