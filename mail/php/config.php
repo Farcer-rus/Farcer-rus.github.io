@@ -32,18 +32,18 @@
 	// *** SMTP *** //
 
 		require_once($_SERVER['DOCUMENT_ROOT'] . '/mail/phpmailer/smtp.php');
-		const HOST = 'ssl://smtp.yandex.ru';
-		const LOGIN = 'vtopetop@yandex.ru';
-		const PASS = 'zz0304ZZvtopetop';
+		const HOST = 'ssl://smtp.gmail.com';
+		const LOGIN = 'zanoskoai@gmail.com';
+		const PASS = 'mamaprivet1502';
 		const PORT = '465';
 
 	// *** /SMTP *** //
 
   // Почта с которой будет приходить письмо
-	const SENDER = 'vtopetop@yandex.ru';
+	const SENDER = 'zanoskoai@gmail.com';
 	
 	// Почта на которую будет приходить письмо
-	const CATCHER = 'dima.d.v@list.ru';
+	const CATCHER = 'zanoskoai@gmail.com';
 	
 	// Тема письма
 	const SUBJECT = 'Заявка с сайта';
