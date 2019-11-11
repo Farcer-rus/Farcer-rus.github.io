@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
 
@@ -62,7 +62,6 @@ function validate() {
 
 <body>
 
-<div style="float: left; width: 285px;"> <!-- ====1=== -->
 <!-- Простая форма HTML -->
 <!--
   Можно добавлять/удалять любые поля input, textarea, radio, checkbox, select.
@@ -84,8 +83,12 @@ function validate() {
 <div class="textarea_title">Сообщение:</div>
 <div><textarea rows="3" class="form_field" name="Сообщение[0]"></textarea></div>
 
+<div><input type="submit" class="sub_form" name="submit" value="Отправить" /></div>
 
-</div> <!-- ====/3=== -->
+<div class="status"></div> <!-- результат с send.php -->
+</form>
+</div>
+
 
 </body>
 </html>
