@@ -1,0 +1,50 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title></title>
+<meta name="description" content=""/>
+<meta name="Keywords" content=""/>
+<link href="css/style.css" type="text/css" rel="stylesheet"/>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    function AjaxFormRequest(result_id,formMain,url) {
+                jQuery.ajax({
+                    url:     url,
+                    type:     "POST",
+                    dataType: "html",
+                    data: jQuery("#"+formMain).serialize(), 
+                    success: function(response) {
+                    document.getElementById(result_id).innerHTML = response;
+                },
+                error: function(response) {
+                document.getElementById(result_id).innerHTML = "<p>Возникла ошибка при отправке формы. Попробуйте еще раз</p>";
+                }
+             });
+
+             $(':input','#formMain')
+ 				.not(':button, :submit, :reset, :hidden')
+ 				.val('')
+ 				.removeAttr('checked')
+ 				.removeAttr('selected');
+    }
+</script>
+</head>
+<body>
+<div class="wrapper">
+   <div class="form">
+    <div id="messegeResult">
+        <p> Оставьте ваши контакты и наш консультант свяжется с вами </p>
+    </div>
+       
+    <form method="post" action="" id="formMain" name="formMain">
+        <input id="name" type="text" name="name" placeholder="Введите ваше имя" maxlength="30" autocomplete="off" required/>
+        <input id="telephone" type="Tel" name="telephone" placeholder="Введите ваш телефон" maxlength="30" autocomplete="off" required/>
+        <input id="button" type="button"  value="Заказать обратный звонок" onclick="AjaxFormRequest('messegeResult', 'formMain', 'form.php')"/>
+    </form>
+   </div>
+</div>
+
+</body>
+</html>
