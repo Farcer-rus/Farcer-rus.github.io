@@ -112,7 +112,7 @@ select:focus, input:focus {
 	line-height: 20px;
 }
 .header_desc {
-	margin-top: 240px;
+	margin-top: 140px;
 	font-size: 32px;
 	font-family: 'rodchenko', sans-serif;
 	text-align: right;
@@ -133,7 +133,7 @@ select:focus, input:focus {
 	text-align: right;
 }
 .header_pr {
-	margin: 20px 0px 20px 0px;
+	margin: 120px 0px 20px 0px;
 	float: left;
 	width: 100%;
 	font-family: 'rodchenko', sans-serif;
