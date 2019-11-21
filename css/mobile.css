@@ -8,6 +8,13 @@
 	    margin-left: 0px;
 	    left: 0;
 	}
+	.header_pr {
+	margin: 20px 0px 20px 0px;
+	float: left;
+	width: 100%;
+	font-family: 'rodchenko', sans-serif;
+	font-size: 15px;
+	}
 	.header_menu a:nth-child(1) {
 		margin-left: 10px;
 	}
