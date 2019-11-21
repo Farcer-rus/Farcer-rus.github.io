@@ -172,6 +172,7 @@
 	    line-height: 35px;
 	}
 	.header_pr {
+	text-align: center;
 	margin: 20px 0px 20px 0px;
 	float: left;
 	width: 100%;
@@ -180,9 +181,6 @@
 	}
 	.header_desc_dop {
 		text-align: center;
-	}
-	.header_pr {
-	    text-align: center;
 	}
 	.header_pr_item {
 		width: 100%;
