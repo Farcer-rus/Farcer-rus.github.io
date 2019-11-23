@@ -20,7 +20,7 @@
 	    background: linear-gradient(rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.8) 100%);
 	}
 	.header_pr {
-	    margin: 10px 0px 40px 0px;
+	    margin: 0px 0px 40px 0px;
 	}
 	.header_pr_item {
 		display: inline-block;
@@ -166,14 +166,14 @@
 		color: #fff;
 	}
 	.header_desc {
-	    margin-top: 50px;
+	    margin-top: 20px;
 	    text-align: center;
 	    font-size: 30px;
 	    line-height: 35px;
 	}
 	.header_pr {
 	text-align: center;
-	margin: 20px 0px 20px 0px;
+	margin: 0px 0px 20px 0px;
 	float: left;
 	width: 100%;
 	font-family: 'rodchenko', sans-serif;
