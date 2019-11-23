@@ -32,7 +32,7 @@ $HTTP_HOST = parse_url('http://'.$_SERVER["HTTP_HOST"]); // не трогать!
 $HTTP_HOST = str_replace(array("http://","www."),"",$HTTP_HOST['host']); // не трогать!!! вырезает с адреса: "www" для формирования e-mail от которого придёт уведомление
 
 $to = 'zakaz@basketuniform.ru'; // кому отсылать: адрес e-mail
-$from = "zakaz@basketuniform.ru"; // адрес, от которого придёт уведомление, желательно указать существующий ящик на хостинге!
+$from = "zakaz@".$HTTP_HOST; // адрес, от которого придёт уведомление, желательно указать существующий ящик на хостинге!
 $signature = 'CITi.COM'; // подпись в письме
 $title = "Сообщение с сайта: http://".$_SERVER["HTTP_HOST"]; // тема в письме
 
