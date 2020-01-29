@@ -46,7 +46,7 @@ select:focus, input:focus {
 	margin-left: -600px;
 }
 .header {
-	background: url(../images/bg.jpg) no-repeat center;
+	background: url(../images/bg.jpg) no-repeat center top -90px;
 	color: #fff;
 }
 .header_elements {
