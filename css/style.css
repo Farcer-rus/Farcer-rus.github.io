@@ -123,6 +123,15 @@ select:focus, input:focus {
 	float: left;
 	position: relative;
 }
+.header_desc2 {
+	margin-top: 45px;
+	font-size: 32px;
+	font-family: 'rodchenko', sans-serif;
+	text-align: left;
+	width: 100%;
+	float: left;
+	position: relative;
+}
 .header_desc span {
 	color: #009fe3;
 	text-decoration: underline;
