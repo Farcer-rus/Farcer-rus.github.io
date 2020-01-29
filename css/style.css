@@ -98,7 +98,7 @@ select:focus, input:focus {
 .contact {
 	font-family: 'rodchenko';
 	text-align: right;
-	float: right;
+	float: left;
 	font-size: 40px;
 	margin-top: 20px;
 	line-height: 20px;
