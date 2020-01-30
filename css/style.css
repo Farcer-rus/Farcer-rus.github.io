@@ -208,7 +208,7 @@ select:focus, input:focus {
 	float: left;
 	font-size: 25px;
 	text-transform: uppercase;
-	color: #0c1e28;
+	color: #fff;
 }
 .logos_item {
 	margin: 25px 0px 30px 0px;
