@@ -207,6 +207,7 @@
 	    background-repeat: repeat !important;
 	}
 	.about {
+	    background: url(../images/aboutbg.jpg) left top;
 	    padding-bottom: 40px;
 	    height: auto;
 	}
